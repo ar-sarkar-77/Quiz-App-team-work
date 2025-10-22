@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="-120dp" />
+        android:layout_marginTop="-150dp" />
 
     <ImageView
         android:id="@+id/image_profile"
@@ -57,6 +57,21 @@
         android:textSize="16dp"
         android:layout_marginLeft="16dp"
         android:textColor="#000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="10 point"
+        android:textSize="28dp"
+        android:layout_marginLeft="16dp"
+        android:textColor="#454545"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/design_2"
+        android:padding="8dp"
         />
 
     <LinearLayout
