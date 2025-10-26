@@ -57,7 +57,8 @@ class Dashboard_Activity : AppCompatActivity() {
 
             holder.title.setOnClickListener {
 
-                context.startActivity(Intent(context , QuestionActivity::class.java))
+                var intent = Intent(context , QuestionActivity::class.java)
+                context.startActivity(intent)
 
             }
 
