@@ -4,110 +4,126 @@ object Mathematics {
 
     val question = mutableListOf<Quiz>(
 
-
-        Quiz(
-            "If a = 2 and b = 3, then (a + b)² = ?", listOf("10", "12", "25", "25"), 2
-        ),
+        // Basic Algebra (1-20)
+        Quiz("If a = 2 and b = 3, then (a + b)² = ?", listOf("10", "12", "25", "20"), 2),
         Quiz("The roots of x² - 5x + 6 = 0 are:", listOf("2,3", "3,4", "1,6", "4,5"), 0),
+        Quiz("If x + 5 = 12, then x = ?", listOf("7", "17", "5", "6"), 0),
+        Quiz("Simplify: 3x + 2x = ?", listOf("5x", "6x", "5x²", "6"), 0),
+        Quiz("If 2x = 10, then x = ?", listOf("5", "20", "2", "8"), 0),
+        Quiz("What is (a + b)(a - b)?", listOf("a² - b²", "a² + b²", "2ab", "a - b"), 0),
+        Quiz("If x² = 16, then x = ?", listOf("4", "±4", "-4", "8"), 1),
+        Quiz("Solve: 3x - 7 = 8", listOf("5", "3", "15", "1"), 0),
+        Quiz("If (x + 1)(x - 1) = 0, then x = ?", listOf("1 or -1", "1", "-1", "0"), 0),
+        Quiz("What is x³ ÷ x² = ?", listOf("x", "x²", "1", "x⁵"), 0),
+        Quiz("If 4x + 3 = 19, then x = ?", listOf("4", "5", "3", "6"), 0),
+        Quiz("Simplify: (2x²)(3x) = ?", listOf("6x³", "5x³", "6x²", "5x²"), 0),
+        Quiz("If x/5 = 3, then x = ?", listOf("15", "8", "2", "5/3"), 0),
+        Quiz("What is (x + 2)² = ?", listOf("x² + 4x + 4", "x² + 4", "x² + 2x + 4", "x² + 2"), 0),
+        Quiz("If 2x + 3 = x + 7, then x = ?", listOf("4", "10", "3", "5"), 0),
+        Quiz("Solve: x - 8 = -3", listOf("5", "11", "-5", "-11"), 0),
+        Quiz("What is 3(x + 2) = ?", listOf("3x + 6", "3x + 2", "3x + 5", "x + 6"), 0),
+        Quiz("If x² + 2x + 1 = 0, then x = ?", listOf("-1", "1", "±1", "0"), 0),
+        Quiz("Simplify: 5x - 2x + 3x = ?", listOf("6x", "10x", "0", "3x"), 0),
+        Quiz("If |x| = 7, then x = ?", listOf("7", "-7", "±7", "0"), 2),
+
+        // Trigonometry (21-40)
         Quiz("If sinθ = 3/5, then cosθ = ?", listOf("4/5", "5/4", "3/4", "1/5"), 0),
+        Quiz("If tanθ = 1, θ equals:", listOf("30°", "45°", "60°", "90°"), 1),
+        Quiz("The value of sin45° = ?", listOf("1", "1/√2", "√3/2", "1/2"), 1),
+        Quiz("The value of cos60° = ?", listOf("1/2", "√3/2", "0", "1"), 0),
+        Quiz("If secθ = 2, then cosθ = ?", listOf("2", "1/2", "1", "0"), 1),
+        Quiz("If sin²θ + cos²θ = ?", listOf("0", "1", "2", "Undefined"), 1),
+        Quiz("If θ = 30°, then tanθ = ?", listOf("1/√3", "√3", "1", "1/2"), 0),
+        Quiz("Value of sin0° = ?", listOf("1", "0", "-1", "∞"), 1),
+        Quiz("Value of cos90° = ?", listOf("1", "0", "-1", "∞"), 1),
+        Quiz("If sinA = 1, then A = ?", listOf("0°", "90°", "180°", "45°"), 1),
+        Quiz("If tanA = 3/4, then sinA = ?", listOf("3/5", "4/5", "5/3", "1/5"), 0),
+        Quiz("Value of tan45° = ?", listOf("1", "0", "√3", "1/√3"), 0),
+        Quiz("If angle A = 60°, then cosA = ?", listOf("1/2", "√3/2", "1", "0"), 0),
+        Quiz("Value of sin30° = ?", listOf("1/2", "√3/2", "1", "1/√3"), 0),
+        Quiz("Value of cos30° = ?", listOf("√3/2", "1/2", "1", "0"), 0),
+        Quiz("If cotθ = 1/tanθ, and tanθ = 2, then cotθ = ?", listOf("1/2", "2", "1", "0"), 0),
+        Quiz("Value of tan60° = ?", listOf("√3", "1/√3", "1", "0"), 0),
+        Quiz("If sinA = 0.6, find cosA", listOf("0.8", "0.5", "0.9", "0.7"), 0),
+        Quiz("Value of sin90° = ?", listOf("1", "0", "1/2", "√3/2"), 0),
+        Quiz("If cos²θ = 1 - sin²θ, this is:", listOf("Pythagorean identity", "Sum rule", "Product rule", "Inverse rule"), 0),
+
+        // Calculus (41-60)
         Quiz("Derivative of x² is:", listOf("2x", "x", "x²", "x³"), 0),
         Quiz("Integral of x dx is:", listOf("x²/2 + C", "2x + C", "1/x + C", "x³ + C"), 0),
-        Quiz(
-            "If A = {1,2,3} and B = {3,4,5}, then A ∩ B =",
-            listOf("{1,2}", "{3}", "{4,5}", "{1,3,5}"),
-            1
-        ),
-        Quiz("If tanθ = 1, θ equals:", listOf("30°", "45°", "60°", "90°"), 1),
-        Quiz("The slope of y = 3x + 2 is:", listOf("2", "3", "1", "0"), 1),
-        Quiz(
-            "If log10(2) = 0.3010, then log10(200) =",
-            listOf("2.3010", "3.3010", "0.3010", "1.3010"),
-            3
-        ),
-        Quiz("If x³ = 27, then x =", listOf("2", "3", "9", "6"), 1),
-        Quiz("If a = 3, b = 4, then √(a² + b²) =", listOf("5", "6", "7", "4"), 0),
-        Quiz("If f(x) = x² + 3x, then f'(x) =", listOf("x²", "2x + 3", "2x - 3", "3x²"), 1),
-        Quiz("If sin²θ + cos²θ = ?", listOf("0", "1", "2", "Undefined"), 1),
-        Quiz(
-            "If two lines are perpendicular, the product of their slopes is:",
-            listOf("0", "1", "-1", "∞"),
-            2
-        ),
-        Quiz("The value of sin45° =", listOf("1", "1/√2", "√3/2", "1/2"), 1),
-        Quiz("The value of cos60° =", listOf("1/2", "√3/2", "0", "1"), 0),
-        Quiz("If secθ = 2, then cosθ =", listOf("2", "1/2", "1", "0.5"), 1),
-        Quiz("If x² = 16, then x =", listOf("4", "±4", "-4", "0"), 1),
-        Quiz("If (x + 1)(x - 1) = 0, then x =", listOf("1 or -1", "1", "-1", "0"), 0),
-        Quiz("If f(x) = 2x + 5, find f(3)", listOf("11", "10", "8", "15"), 0),
-        Quiz(
-            "The quadratic formula is:",
-            listOf(
-                "x = (-b ± √(b² - 4ac)) / 2a",
-                "x = (-b ± √(b² + 4ac)) / 2a",
-                "x = (b ± √(b² - 4ac)) / 2a",
-                "x = (a ± b) / 2"
-            ),
-            0
-        ),
-        Quiz(
-            "If the sum of roots = 5 and product = 6, the equation is:",
-            listOf("x² - 5x + 6 = 0", "x² + 5x + 6 = 0", "x² - 6x + 5 = 0", "x² + 6x - 5 = 0"),
-            0
-        ),
-        Quiz("If matrix A = [[1,2],[3,4]], det(A) =", listOf("10", "2", "-2", "1"), 2),
-        Quiz("If tanA = 3/4, then sinA =", listOf("3/5", "4/5", "5/3", "1/5"), 0),
-        Quiz("The area of a triangle = ?", listOf("½bh", "2bh", "bh", "b+h"), 0),
+        Quiz("If f(x) = x² + 3x, then f'(x) = ?", listOf("x²", "2x + 3", "2x - 3", "3x²"), 1),
+        Quiz("Derivative of sinx = ?", listOf("cosx", "-cosx", "-sinx", "tanx"), 0),
+        Quiz("Derivative of cosx = ?", listOf("sinx", "-sinx", "-cosx", "tanx"), 1),
+        Quiz("If f(x) = x³, then f'(x) = ?", listOf("3x²", "x²", "x³", "2x"), 0),
+        Quiz("If y = x³ + 2x, then dy/dx = ?", listOf("3x² + 2", "2x + 3", "x²", "3x + 2"), 0),
+        Quiz("Derivative of constant c is:", listOf("0", "c", "1", "x"), 0),
         Quiz("If x → 2, find limit of (x² - 4)/(x - 2)", listOf("2", "4", "6", "∞"), 1),
-        Quiz("Derivative of sinx =", listOf("cosx", "-cosx", "-sinx", "tanx"), 0),
-        Quiz("Derivative of cosx =", listOf("sinx", "-sinx", "-cosx", "tanx"), 1),
-        Quiz(
-            "If the equation of a line is 2x + 3y = 6, its slope is:",
-            listOf("-2/3", "2/3", "3/2", "1/3"),
-            0
-        ),
-        Quiz("If θ = 30°, then tanθ =", listOf("1/√3", "√3", "1", "1/2"), 0),
-        Quiz("Value of sin0° =", listOf("1", "0", "-1", "∞"), 1),
-        Quiz("If loga(b) × logb(c) = ?", listOf("logb(a)", "logc(a)", "loga(c)", "1"), 2),
-        Quiz("If f(x) = x³, then f'(x) =", listOf("3x²", "x²", "x³", "2x"), 0),
-        Quiz(
-            "If vectors a = (2,3) and b = (1,4), then a + b =",
-            listOf("(3,7)", "(2,7)", "(1,3)", "(3,6)"),
-            0
-        ),
-        Quiz("If sinA = 0.6, find cosA", listOf("0.8", "0.5", "0.9", "0.7"), 0),
+        Quiz("Integral of 2x dx = ?", listOf("x² + C", "2x² + C", "x³ + C", "2x + C"), 0),
+        Quiz("Derivative of x⁴ = ?", listOf("4x³", "3x⁴", "4x²", "x³"), 0),
+        Quiz("Derivative of 5x = ?", listOf("5", "5x", "1", "0"), 0),
+        Quiz("Integral of cos(x) dx = ?", listOf("sin(x) + C", "-sin(x) + C", "cos(x) + C", "tan(x) + C"), 0),
+        Quiz("Derivative of e^x = ?", listOf("e^x", "xe^(x-1)", "ln(x)", "1/x"), 0),
+        Quiz("Derivative of ln(x) = ?", listOf("1/x", "x", "e^x", "ln(x)"), 0),
+        Quiz("If f(x) = 3x² + 2x + 1, then f'(x) = ?", listOf("6x + 2", "3x + 2", "6x", "3x²"), 0),
+        Quiz("Integral of 1/x dx = ?", listOf("ln|x| + C", "x + C", "1/x² + C", "e^x + C"), 0),
+        Quiz("Derivative of tan(x) = ?", listOf("sec²(x)", "cos²(x)", "sin²(x)", "csc²(x)"), 0),
+        Quiz("Second derivative of x³ = ?", listOf("6x", "3x²", "x³", "3x"), 0),
+        Quiz("Integral of sin(x) dx = ?", listOf("-cos(x) + C", "cos(x) + C", "sin(x) + C", "tan(x) + C"), 0),
+
+        // Geometry & Mensuration (61-80)
         Quiz("Area of a circle = ?", listOf("πr²", "2πr", "πr", "πd"), 0),
-        Quiz("If y = x³ + 2x, then dy/dx =", listOf("3x² + 2", "2x + 3", "x²", "3x + 2"), 0),
-        Quiz(
-            "If a = 2i + 3j, b = i - 2j, then a + b =",
-            listOf("3i + j", "i + j", "3i - j", "2i + j"),
-            0
-        ),
-        Quiz(
-            "If cos²θ = 1 - sin²θ, this is:",
-            listOf("Pythagorean identity", "Sum rule", "Product rule", "Inverse rule"),
-            0
-        ),
-        Quiz("If log10(100) = ?", listOf("1", "2", "10", "0"), 1),
-        Quiz(
-            "The function y = mx + c represents:",
-            listOf("Straight line", "Circle", "Parabola", "Ellipse"),
-            0
-        ),
-        Quiz("If |x| = 5, then x =", listOf("5 only", "-5 only", "±5", "0"), 2),
-        Quiz("If sinA = 1, then A =", listOf("0°", "90°", "180°", "45°"), 1),
-        Quiz(
-            "If two lines are parallel, their slopes are:",
-            listOf("Equal", "Reciprocal", "Opposite", "Zero"),
-            0
-        ),
-        Quiz("If a = 2, find the value of 3a² + 2a + 1", listOf("12", "15", "17", "18"), 2),
+        Quiz("The area of a triangle = ?", listOf("½bh", "2bh", "bh", "b+h"), 0),
+        Quiz("Perimeter of rectangle = ?", listOf("2(l+w)", "lw", "l+w", "2lw"), 0),
+        Quiz("Area of rectangle = ?", listOf("length × width", "2(l+w)", "l+w", "l²+w²"), 0),
+        Quiz("Volume of cube = ?", listOf("a³", "6a²", "a²", "3a"), 0),
+        Quiz("If a = 3, b = 4, then √(a² + b²) = ?", listOf("5", "6", "7", "4"), 0),
+        Quiz("Circumference of circle = ?", listOf("2πr", "πr²", "πd", "πr"), 0),
+        Quiz("Area of square = ?", listOf("side²", "4×side", "2×side", "side³"), 0),
+        Quiz("Volume of cylinder = ?", listOf("πr²h", "2πrh", "πr³", "2πr²h"), 0),
+        Quiz("If a² + b² = c², then the triangle is:", listOf("Acute", "Obtuse", "Right-angled", "Equilateral"), 2),
+        Quiz("Sum of angles in a triangle = ?", listOf("180°", "360°", "90°", "270°"), 0),
+        Quiz("Perimeter of square = ?", listOf("4×side", "side²", "2×side", "side³"), 0),
+        Quiz("Area of trapezium = ?", listOf("½(a+b)h", "(a+b)h", "abh", "a+b+h"), 0),
+        Quiz("Volume of sphere = ?", listOf("4/3πr³", "πr³", "2πr³", "πr²"), 0),
+        Quiz("Surface area of cube = ?", listOf("6a²", "a³", "4a²", "a²"), 0),
+        Quiz("Diagonal of square = ?", listOf("a√2", "2a", "a²", "a"), 0),
+        Quiz("Area of rhombus = ?", listOf("½d₁d₂", "d₁d₂", "d₁+d₂", "2d₁d₂"), 0),
+        Quiz("Volume of cone = ?", listOf("1/3πr²h", "πr²h", "2/3πr²h", "πrh"), 0),
+        Quiz("Surface area of sphere = ?", listOf("4πr²", "2πr²", "πr²", "πr³"), 0),
+        Quiz("Perimeter of circle = ?", listOf("2πr", "πr²", "πr", "2πd"), 0),
+
+        // Linear Equations & Functions (81-100)
+        Quiz("The slope of y = 3x + 2 is:", listOf("2", "3", "1", "0"), 1),
+        Quiz("If the equation of a line is 2x + 3y = 6, its slope is:", listOf("-2/3", "2/3", "3/2", "1/3"), 0),
+        Quiz("If two lines are perpendicular, the product of their slopes is:", listOf("0", "1", "-1", "∞"), 2),
+        Quiz("If two lines are parallel, their slopes are:", listOf("Equal", "Reciprocal", "Opposite", "Zero"), 0),
+        Quiz("The function y = mx + c represents:", listOf("Straight line", "Circle", "Parabola", "Ellipse"), 0),
+        Quiz("If f(x) = 2x + 5, find f(3)", listOf("11", "10", "8", "15"), 0),
+        Quiz("Slope of horizontal line is:", listOf("0", "1", "∞", "Undefined"), 0),
+        Quiz("Slope of vertical line is:", listOf("Undefined", "0", "1", "-1"), 0),
+        Quiz("If y = 5, the line is:", listOf("Horizontal", "Vertical", "Slanted", "Curved"), 0),
+        Quiz("If x = 3, the line is:", listOf("Vertical", "Horizontal", "Slanted", "Curved"), 0),
+        Quiz("Point-slope form is:", listOf("y-y₁=m(x-x₁)", "y=mx+c", "ax+by=c", "y=x²"), 0),
+        Quiz("Distance formula is:", listOf("√[(x₂-x₁)²+(y₂-y₁)²]", "(x₂-x₁)+(y₂-y₁)", "x₂-x₁", "y₂-y₁"), 0),
+        Quiz("Midpoint formula is:", listOf("((x₁+x₂)/2,(y₁+y₂)/2)", "(x₁+x₂,y₁+y₂)", "(x₂-x₁,y₂-y₁)", "(x₁,y₁)"), 0),
         Quiz("If f(x) = x² + 4x + 4, its minimum value is:", listOf("0", "2", "4", "-4"), 0),
-        Quiz("If angle A = 60°, then cosA =", listOf("1/2", "√3/2", "1", "0"), 0),
-        Quiz("If determinant of [[a,b],[b,a]] = ?", listOf("a² - b²", "a² + b²", "ab", "a + b"), 0),
-        Quiz(
-            "If a² + b² = c², then the triangle is:",
-            listOf("Acute", "Obtuse", "Right-angled", "Equilateral"),
-            2
-        )
+        Quiz("The quadratic formula is:", listOf("x=(-b±√(b²-4ac))/2a", "x=(-b±√(b²+4ac))/2a", "x=(b±√(b²-4ac))/2a", "x=(a±b)/2"), 0),
+        Quiz("If the sum of roots = 5 and product = 6, the equation is:", listOf("x²-5x+6=0", "x²+5x+6=0", "x²-6x+5=0", "x²+6x-5=0"), 0),
+        Quiz("Discriminant b²-4ac > 0 means:", listOf("Two real roots", "One real root", "No real roots", "Complex roots"), 0),
+        Quiz("If discriminant = 0, roots are:", listOf("Equal", "Unequal", "Complex", "None"), 0),
+        Quiz("Vertex of parabola y=ax²+bx+c is at x=?", listOf("-b/2a", "b/2a", "-b/a", "b/a"), 0),
+        Quiz("If a = 2, find 3a² + 2a + 1", listOf("12", "15", "17", "18"), 2),
+
+        // Additional Questions (101-110)
+        Quiz("If log₁₀(2) = 0.3010, then log₁₀(200) = ?", listOf("2.3010", "3.3010", "0.3010", "1.3010"), 0),
+        Quiz("If log₁₀(100) = ?", listOf("1", "2", "10", "0"), 1),
+        Quiz("If logₐ(b) × logᵦ(c) = ?", listOf("logᵦ(a)", "logᶜ(a)", "logₐ(c)", "1"), 2),
+        Quiz("If A = {1,2,3} and B = {3,4,5}, then A ∩ B =", listOf("{1,2}", "{3}", "{4,5}", "{1,3,5}"), 1),
+        Quiz("If matrix A = [[1,2],[3,4]], det(A) = ?", listOf("10", "2", "-2", "1"), 2),
+        Quiz("Determinant of [[a,b],[b,a]] = ?", listOf("a²-b²", "a²+b²", "ab", "a+b"), 0),
+        Quiz("If vectors a = (2,3) and b = (1,4), then a + b = ?", listOf("(3,7)", "(2,7)", "(1,3)", "(3,6)"), 0),
+        Quiz("If a = 2i + 3j, b = i - 2j, then a + b = ?", listOf("3i+j", "i+j", "3i-j", "2i+j"), 0),
+        Quiz("If x³ = 27, then x = ?", listOf("2", "3", "9", "6"), 1),
+        Quiz("Value of ∛64 = ?", listOf("4", "8", "2", "16"), 0)
     )
 }
