@@ -9,9 +9,7 @@
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
     tools:context=".QuestionActivity"
-    android:background="@drawable/quiz_14"
-    >
-
+    android:background="@drawable/quiz_14">
     <View
         android:id="@+id/topCircle"
         android:layout_width="300dp"
@@ -111,12 +109,14 @@
                 android:textStyle="bold"
                 android:textColor="#2C3E50" />
 
+
             <RadioGroup
                 android:id="@+id/options_group"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="24dp">
+                android:layout_marginTop="24dp"
+                tools:ignore="ExtraText">
 
                 <RadioButton
                     android:id="@+id/option1"
@@ -153,6 +153,7 @@
                     android:textSize="16sp"
                     android:textColor="#34495E"
                     android:padding="8dp" />
+
 
             </RadioGroup>
 

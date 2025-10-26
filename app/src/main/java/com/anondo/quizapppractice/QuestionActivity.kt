@@ -9,7 +9,7 @@ import com.anondo.quizapppractice.databinding.ActivityQuestionBinding
 
 
 class QuestionActivity : AppCompatActivity() {
-    lateinit var binding : ActivityQuestionBinding
+    lateinit var binding: ActivityQuestionBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
