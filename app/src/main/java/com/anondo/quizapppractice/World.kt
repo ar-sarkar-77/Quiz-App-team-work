@@ -3,208 +3,129 @@ package com.anondo.quizapppractice
 object World {
 
     val question = mutableListOf<Quiz>(
-        Quiz(
-            "What is the capital of BD?",
-            listOf("Noakhali", "Bogura", " Dhaka", "Rangpur"),
-            1
-        ),
-        Quiz(
-            "What is the Industrial Capital of Bangladesh?",
-            listOf("Noakhali", "Bogura", " Dhaka", "Rangpur"),
-            2
-        ),
-        Quiz(
-            "What is the capital of India?",
-            listOf("Mumbai", "New Delhi", "Kolkata", "Chennai"),
-            1
-        ),
-        Quiz(
-            "What is the capital of USA?",
-            listOf("New York", "Washington D.C.", "Los Angeles", "Chicago"),
-            1
-        ),
-        Quiz(
-            "What is the capital of Canada?",
-            listOf("Toronto", "Ottawa", "Vancouver", "Montreal"),
-            1
-        ),
-        Quiz(
-            "What is the capital of Australia?",
-            listOf("Sydney", "Melbourne", "Canberra", "Perth"),
-            2
-        ),
-        Quiz(
-            "What is the capital of Bangladesh?",
-            listOf("Noakhali", "Bogura", "Dhaka", "Rangpur"),
-            2
-        ),
-        Quiz(
-            "What is the capital of Pakistan?",
-            listOf("Karachi", "Lahore", "Islamabad", "Peshawar"),
-            2
-        ),
-        Quiz(
-            "What is the capital of Nepal?",
-            listOf("Pokhara", "Kathmandu", "Biratnagar", "Lalitpur"),
-            1
-        ),
-        Quiz("What is the capital of Sri Lanka?", listOf("Kandy", "Colombo", "Galle", "Jaffna"), 1),
-        Quiz(
-            "What is the capital of China?",
-            listOf("Shanghai", "Beijing", "Hong Kong", "Guangzhou"),
-            1
-        ),
+
+        // World Capitals (1-30)
+        Quiz("What is the capital of Bangladesh?", listOf("Chittagong", "Dhaka", "Sylhet", "Rajshahi"), 1),
+        Quiz("What is the capital of India?", listOf("Mumbai", "New Delhi", "Kolkata", "Bangalore"), 1),
+        Quiz("What is the capital of China?", listOf("Shanghai", "Beijing", "Hong Kong", "Guangzhou"), 1),
         Quiz("What is the capital of Japan?", listOf("Osaka", "Kyoto", "Tokyo", "Nagoya"), 2),
+        Quiz("What is the capital of USA?", listOf("New York", "Washington D.C.", "Los Angeles", "Chicago"), 1),
+        Quiz("What is the capital of Canada?", listOf("Toronto", "Ottawa", "Vancouver", "Montreal"), 1),
+        Quiz("What is the capital of Australia?", listOf("Sydney", "Melbourne", "Canberra", "Perth"), 2),
         Quiz("What is the capital of France?", listOf("Paris", "Lyon", "Marseille", "Nice"), 0),
-        Quiz(
-            "What is the capital of Germany?",
-            listOf("Munich", "Berlin", "Frankfurt", "Hamburg"),
-            1
-        ),
+        Quiz("What is the capital of Germany?", listOf("Munich", "Berlin", "Frankfurt", "Hamburg"), 1),
         Quiz("What is the capital of Italy?", listOf("Venice", "Milan", "Rome", "Florence"), 2),
-        Quiz(
-            "What is the capital of Spain?",
-            listOf("Barcelona", "Madrid", "Seville", "Valencia"),
-            1
-        ),
-        Quiz("What is the capital of Portugal?", listOf("Lisbon", "Porto", "Braga", "Coimbra"), 0),
-        Quiz(
-            "What is the capital of Russia?",
-            listOf("Moscow", "Saint Petersburg", "Kazan", "Sochi"),
-            0
-        ),
-        Quiz("What is the capital of Ukraine?", listOf("Kyiv", "Odesa", "Lviv", "Kharkiv"), 0),
-        Quiz(
-            "What is the capital of Brazil?",
-            listOf("Rio de Janeiro", "São Paulo", "Brasília", "Salvador"),
-            2
-        ),
-        Quiz(
-            "What is the capital of Argentina?",
-            listOf("Rosario", "Córdoba", "Buenos Aires", "Mendoza"),
-            2
-        ),
-        Quiz(
-            "What is the capital of South Africa?",
-            listOf("Pretoria", "Cape Town", "Johannesburg", "Durban"),
-            0
-        ),
+        Quiz("What is the capital of Brazil?", listOf("Rio de Janeiro", "São Paulo", "Brasília", "Salvador"), 2),
+        Quiz("What is the capital of Russia?", listOf("Moscow", "Saint Petersburg", "Kazan", "Sochi"), 0),
         Quiz("What is the capital of Egypt?", listOf("Alexandria", "Cairo", "Giza", "Luxor"), 1),
-        Quiz(
-            "What is the capital of Saudi Arabia?",
-            listOf("Jeddah", "Riyadh", "Mecca", "Medina"),
-            1
-        ),
-        Quiz("What is the capital of UAE?", listOf("Dubai", "Abu Dhabi", "Sharjah", "Ajman"), 1),
+        Quiz("What is the capital of South Africa?", listOf("Pretoria", "Cape Town", "Johannesburg", "Durban"), 0),
+        Quiz("What is the capital of Thailand?", listOf("Chiang Mai", "Phuket", "Bangkok", "Pattaya"), 2),
         Quiz("What is the capital of Turkey?", listOf("Istanbul", "Ankara", "Izmir", "Antalya"), 1),
-        Quiz("What is the capital of Iran?", listOf("Tehran", "Mashhad", "Isfahan", "Shiraz"), 0),
-        Quiz("What is the capital of Iraq?", listOf("Basra", "Baghdad", "Mosul", "Erbil"), 1),
-        Quiz(
-            "What is the capital of Afghanistan?",
-            listOf("Kandahar", "Kabul", "Herat", "Mazar-i-Sharif"),
-            1
-        ),
-        Quiz(
-            "What is the capital of Thailand?",
-            listOf("Chiang Mai", "Phuket", "Bangkok", "Pattaya"),
-            2
-        ),
-        Quiz(
-            "What is the capital of Malaysia?",
-            listOf("Penang", "Kuala Lumpur", "Malacca", "Johor Bahru"),
-            1
-        ),
-        Quiz(
-            "What is the capital of Singapore?",
-            listOf("Singapore", "None", "Sentosa", "Changi"),
-            0
-        ),
-        Quiz(
-            "What is the capital of Indonesia?",
-            listOf("Bali", "Surabaya", "Jakarta", "Medan"),
-            2
-        ),
-        Quiz(
-            "What is the capital of Philippines?",
-            listOf("Manila", "Cebu", "Davao", "Quezon City"),
-            0
-        ),
-        Quiz(
-            "What is the capital of Vietnam?",
-            listOf("Hanoi", "Ho Chi Minh City", "Da Nang", "Hue"),
-            0
-        ),
-        Quiz(
-            "What is the capital of South Korea?",
-            listOf("Busan", "Seoul", "Incheon", "Daegu"),
-            1
-        ),
-        Quiz(
-            "What is the capital of North Korea?",
-            listOf("Pyongyang", "Kaesong", "Hamhung", "Nampo"),
-            0
-        ),
-        Quiz(
-            "What is the capital of Myanmar?",
-            listOf("Yangon", "Naypyidaw", "Mandalay", "Bago"),
-            1
-        ),
-        Quiz(
-            "What is the capital of Bhutan?",
-            listOf("Thimphu", "Paro", "Punakha", "Phuentsholing"),
-            0
-        ),
-        Quiz(
-            "What is the capital of Maldives?",
-            listOf("Male", "Addu City", "Fuvahmulah", "Kulhudhuffushi"),
-            0
-        ),
-        Quiz(
-            "What is the capital of Qatar?",
-            listOf("Doha", "Al Rayyan", "Umm Salal", "Al Wakrah"),
-            0
-        ),
-        Quiz("What is the capital of Oman?", listOf("Muscat", "Salalah", "Nizwa", "Sohar"), 0),
-        Quiz(
-            "What is the capital of Kuwait?",
-            listOf("Hawalli", "Kuwait City", "Ahmadi", "Jahra"),
-            1
-        ),
-        Quiz("What is the capital of Jordan?", listOf("Amman", "Zarqa", "Irbid", "Aqaba"), 0),
-        Quiz("What is the capital of Lebanon?", listOf("Tripoli", "Beirut", "Sidon", "Byblos"), 1),
-        Quiz(
-            "What is the capital of Israel?",
-            listOf("Jerusalem", "Tel Aviv", "Haifa", "Eilat"),
-            0
-        ),
-        Quiz(
-            "What is the capital of Greece?",
-            listOf("Athens", "Thessaloniki", "Patras", "Crete"),
-            0
-        ),
-        Quiz(
-            "What is the capital of Sweden?",
-            listOf("Stockholm", "Gothenburg", "Malmo", "Uppsala"),
-            0
-        ),
-        Quiz(
-            "What is the capital of Norway?",
-            listOf("Oslo", "Bergen", "Trondheim", "Stavanger"),
-            0
-        ),
-        Quiz("What is the capital of Finland?", listOf("Helsinki", "Turku", "Tampere", "Oulu"), 0),
-        Quiz(
-            "What is the capital of Denmark?",
-            listOf("Aarhus", "Odense", "Copenhagen", "Aalborg"),
-            2
-        ),
+        Quiz("What is the capital of Saudi Arabia?", listOf("Jeddah", "Riyadh", "Mecca", "Medina"), 1),
+        Quiz("What is the capital of UAE?", listOf("Dubai", "Abu Dhabi", "Sharjah", "Ajman"), 1),
+        Quiz("What is the capital of Pakistan?", listOf("Karachi", "Lahore", "Islamabad", "Peshawar"), 2),
+        Quiz("What is the capital of Nepal?", listOf("Pokhara", "Kathmandu", "Biratnagar", "Lalitpur"), 1),
+        Quiz("What is the capital of Spain?", listOf("Barcelona", "Madrid", "Seville", "Valencia"), 1),
+        Quiz("What is the capital of Argentina?", listOf("Rosario", "Córdoba", "Buenos Aires", "Mendoza"), 2),
+        Quiz("What is the capital of Mexico?", listOf("Guadalajara", "Mexico City", "Cancun", "Monterrey"), 1),
+        Quiz("What is the capital of Nigeria?", listOf("Lagos", "Abuja", "Kano", "Ibadan"), 1),
+        Quiz("What is the capital of Indonesia?", listOf("Jakarta", "Bali", "Surabaya", "Medan"), 0),
+        Quiz("What is the capital of Malaysia?", listOf("Penang", "Kuala Lumpur", "Malacca", "Johor Bahru"), 1),
+        Quiz("What is the capital of South Korea?", listOf("Busan", "Seoul", "Incheon", "Daegu"), 1),
+        Quiz("What is the capital of Sweden?", listOf("Stockholm", "Gothenburg", "Malmo", "Uppsala"), 0),
         Quiz("What is the capital of Switzerland?", listOf("Zurich", "Bern", "Geneva", "Basel"), 1),
-        Quiz(
-            "What is the capital of Netherlands?",
-            listOf("Rotterdam", "Amsterdam", "The Hague", "Utrecht"),
-            1
-        )
+        Quiz("What is the capital of New Zealand?", listOf("Auckland", "Wellington", "Christchurch", "Hamilton"), 1),
+
+        // Countries & Geography (31-50)
+        Quiz("Which is the largest country by area?", listOf("Canada", "Russia", "China", "USA"), 1),
+        Quiz("Which is the smallest country in the world?", listOf("Monaco", "Vatican City", "San Marino", "Liechtenstein"), 1),
+        Quiz("Which is the most populous country?", listOf("India", "China", "USA", "Indonesia"), 0),
+        Quiz("Which country has the longest coastline?", listOf("Australia", "Canada", "Russia", "Indonesia"), 1),
+        Quiz("How many continents are there?", listOf("5", "6", "7", "8"), 2),
+        Quiz("Which continent has the most countries?", listOf("Asia", "Africa", "Europe", "South America"), 1),
+        Quiz("Which country is known as Land of Rising Sun?", listOf("China", "Japan", "Thailand", "South Korea"), 1),
+        Quiz("Which country is known as Land of Maple Leaf?", listOf("USA", "Canada", "Sweden", "Norway"), 1),
+        Quiz("Which country has the most islands?", listOf("Indonesia", "Sweden", "Philippines", "Japan"), 1),
+        Quiz("Which is the only country in both Europe and Asia?", listOf("Russia", "Turkey", "Both", "Georgia"), 2),
+        Quiz("Which country is shaped like a boot?", listOf("Spain", "Italy", "Portugal", "Greece"), 1),
+        Quiz("Which country has the Eiffel Tower?", listOf("Italy", "France", "Spain", "UK"), 1),
+        Quiz("Which country is home to kangaroos?", listOf("New Zealand", "Australia", "Papua New Guinea", "Indonesia"), 1),
+        Quiz("Which country has the Great Wall?", listOf("Japan", "China", "Mongolia", "Korea"), 1),
+        Quiz("Which country is famous for pyramids?", listOf("Mexico", "Egypt", "Sudan", "Iraq"), 1),
+        Quiz("Which country has Big Ben?", listOf("France", "UK", "USA", "Canada"), 1),
+        Quiz("Which country is known for Taj Mahal?", listOf("Pakistan", "India", "Bangladesh", "Nepal"), 1),
+        Quiz("Which country has the most time zones?", listOf("USA", "France", "Russia", "China"), 1),
+        Quiz("Which is the only country without mosquitoes?", listOf("Singapore", "Iceland", "New Zealand", "Sweden"), 1),
+        Quiz("Which country never colonized?", listOf("Japan", "Thailand", "Korea", "China"), 1),
+
+        // Oceans & Seas (51-60)
+        Quiz("Which ocean is the largest?", listOf("Atlantic", "Pacific", "Indian", "Arctic"), 1),
+        Quiz("Which ocean is the smallest?", listOf("Atlantic", "Pacific", "Indian", "Arctic"), 3),
+        Quiz("Which ocean is the deepest?", listOf("Atlantic", "Pacific", "Indian", "Arctic"), 1),
+        Quiz("How many oceans are there in the world?", listOf("3", "4", "5", "6"), 2),
+        Quiz("Which sea is the saltiest?", listOf("Dead Sea", "Red Sea", "Black Sea", "Caspian Sea"), 0),
+        Quiz("Which is the largest sea in the world?", listOf("Mediterranean Sea", "Caribbean Sea", "South China Sea", "Bering Sea"), 2),
+        Quiz("The Dead Sea is located between which countries?", listOf("Israel & Jordan", "Egypt & Sudan", "Iraq & Iran", "Turkey & Syria"), 0),
+        Quiz("Which ocean touches Africa, Asia and Oceania?", listOf("Atlantic", "Pacific", "Indian", "Arctic"), 2),
+        Quiz("The Bermuda Triangle is located in which ocean?", listOf("Pacific", "Atlantic", "Indian", "Arctic"), 1),
+        Quiz("Which sea separates Europe and Africa?", listOf("Black Sea", "Mediterranean Sea", "Red Sea", "Caspian Sea"), 1),
+
+        // Mountains & Deserts (61-70)
+        Quiz("Which is the highest mountain in the world?", listOf("K2", "Mount Everest", "Kangchenjunga", "Lhotse"), 1),
+        Quiz("Mount Everest is located in which country?", listOf("India", "Nepal", "China", "Bhutan"), 1),
+        Quiz("Which is the longest mountain range?", listOf("Himalayas", "Andes", "Rockies", "Alps"), 1),
+        Quiz("Which is the largest desert in the world?", listOf("Sahara", "Antarctic Desert", "Arabian", "Gobi"), 1),
+        Quiz("Which is the hottest desert?", listOf("Sahara", "Arabian", "Thar", "Kalahari"), 0),
+        Quiz("The Sahara Desert is located in which continent?", listOf("Asia", "Africa", "Australia", "South America"), 1),
+        Quiz("Mount Kilimanjaro is located in which country?", listOf("Kenya", "Tanzania", "Uganda", "Ethiopia"), 1),
+        Quiz("Which mountain range separates Europe and Asia?", listOf("Alps", "Ural Mountains", "Himalayas", "Caucasus"), 1),
+        Quiz("The Alps are located in which continent?", listOf("Asia", "Europe", "North America", "South America"), 1),
+        Quiz("Which desert is the coldest?", listOf("Gobi", "Antarctic Desert", "Sahara", "Atacama"), 1),
+
+        // Rivers & Lakes (71-80)
+        Quiz("Which is the longest river in the world?", listOf("Amazon", "Nile", "Yangtze", "Mississippi"), 1),
+        Quiz("Which river is known as the lifeline of Egypt?", listOf("Amazon", "Nile", "Tigris", "Euphrates"), 1),
+        Quiz("Which is the largest river by volume?", listOf("Amazon", "Nile", "Congo", "Yangtze"), 0),
+        Quiz("The Amazon River flows through which continent?", listOf("Africa", "South America", "Asia", "North America"), 1),
+        Quiz("Which is the longest river in Asia?", listOf("Ganges", "Yangtze", "Mekong", "Indus"), 1),
+        Quiz("Which river flows through Baghdad?", listOf("Nile", "Tigris", "Euphrates", "Jordan"), 1),
+        Quiz("Which is the largest lake in the world?", listOf("Superior", "Caspian Sea", "Victoria", "Huron"), 1),
+        Quiz("Which is the deepest lake in the world?", listOf("Superior", "Baikal", "Tanganyika", "Michigan"), 1),
+        Quiz("The Great Lakes are located between which countries?", listOf("USA & Canada", "USA & Mexico", "UK & Ireland", "India & Pakistan"), 0),
+        Quiz("Which river is sacred to Hindus?", listOf("Yamuna", "Ganges", "Brahmaputra", "Indus"), 1),
+
+        // Cities & Landmarks (81-95)
+        Quiz("Which city is known as the Big Apple?", listOf("Los Angeles", "New York", "Chicago", "Boston"), 1),
+        Quiz("Which city is known as the City of Love?", listOf("Venice", "Paris", "Rome", "Prague"), 1),
+        Quiz("Which city hosted the 2016 Olympics?", listOf("London", "Rio de Janeiro", "Tokyo", "Beijing"), 1),
+        Quiz("The Statue of Liberty was a gift from which country?", listOf("UK", "France", "Spain", "Italy"), 1),
+        Quiz("Where is the Leaning Tower of Pisa?", listOf("France", "Italy", "Spain", "Greece"), 1),
+        Quiz("Where is the Colosseum located?", listOf("Athens", "Rome", "Venice", "Milan"), 1),
+        Quiz("Where is Machu Picchu located?", listOf("Mexico", "Peru", "Brazil", "Colombia"), 1),
+        Quiz("The Great Barrier Reef is located near which country?", listOf("Indonesia", "Australia", "Philippines", "Malaysia"), 1),
+        Quiz("Where is Angkor Wat temple located?", listOf("Thailand", "Cambodia", "Vietnam", "Laos"), 1),
+        Quiz("Where is the Burj Khalifa, the tallest building?", listOf("Saudi Arabia", "UAE", "Qatar", "Kuwait"), 1),
+        Quiz("Christ the Redeemer statue is in which city?", listOf("São Paulo", "Rio de Janeiro", "Buenos Aires", "Lima"), 1),
+        Quiz("The Kremlin is located in which city?", listOf("Kiev", "Moscow", "St. Petersburg", "Minsk"), 1),
+        Quiz("Where is Stonehenge located?", listOf("Ireland", "England", "Scotland", "Wales"), 1),
+        Quiz("Where is the Parthenon located?", listOf("Rome", "Athens", "Istanbul", "Cairo"), 1),
+        Quiz("Which city has the most skyscrapers?", listOf("New York", "Hong Kong", "Dubai", "Shanghai"), 1),
+
+        // World Records & Facts (96-110)
+        Quiz("Which country produces the most coffee?", listOf("Colombia", "Brazil", "Vietnam", "Ethiopia"), 1),
+        Quiz("Which country consumes the most tea?", listOf("India", "China", "UK", "Turkey"), 1),
+        Quiz("Which language is most spoken worldwide?", listOf("Spanish", "English", "Mandarin Chinese", "Hindi"), 2),
+        Quiz("Which currency is used in Japan?", listOf("Yuan", "Yen", "Won", "Ringgit"), 1),
+        Quiz("Which country invented pizza?", listOf("USA", "Italy", "Greece", "France"), 1),
+        Quiz("Which country has the most UNESCO World Heritage Sites?", listOf("France", "Italy", "China", "Spain"), 1),
+        Quiz("What is the official language of Brazil?", listOf("Spanish", "Portuguese", "English", "French"), 1),
+        Quiz("Which continent has no countries?", listOf("Australia", "Antarctica", "Arctic", "Greenland"), 1),
+        Quiz("Which is the longest border between two countries?", listOf("USA-Mexico", "USA-Canada", "Russia-China", "India-China"), 1),
+        Quiz("Which country has no capital city?", listOf("Vatican", "Nauru", "Monaco", "Singapore"), 1),
+        Quiz("Which country flag is not rectangular?", listOf("Switzerland", "Nepal", "Vatican", "Both A&B"), 3),
+        Quiz("Which is the rainiest place on Earth?", listOf("Cherrapunji", "Mawsynram", "Amazon", "Seattle"), 1),
+        Quiz("Which country has the most active volcanoes?", listOf("Japan", "Indonesia", "USA", "Iceland"), 1),
+        Quiz("The Suez Canal connects which two seas?", listOf("Red & Mediterranean", "Black & Caspian", "Baltic & North", "Arabian & Persian"), 0),
+        Quiz("Panama Canal connects which two oceans?", listOf("Atlantic & Indian", "Atlantic & Pacific", "Pacific & Indian", "Arctic & Atlantic"), 1)
     )
-
-
 }

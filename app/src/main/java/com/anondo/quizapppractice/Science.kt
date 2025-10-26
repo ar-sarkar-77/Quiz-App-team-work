@@ -3,223 +3,124 @@ package com.anondo.quizapppractice
 object Science {
     val question = mutableListOf<Quiz>(
 
-        Quiz(
-            "What planet is known as the Red Planet?",
-            listOf("Earth", "Mars", "Venus", "Jupiter"),
-            1
-        ),
-        Quiz(
-            "What gas do plants absorb from the atmosphere?",
-            listOf("Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"),
-            1
-        ),
-        Quiz("What is the chemical symbol for water?", listOf("HO", "H2O", "O2H", "H2"), 1),
-        Quiz(
-            "What is the center of an atom called?",
-            listOf("Electron", "Nucleus", "Proton", "Neutron"),
-            1
-        ),
-        Quiz("What part of the plant makes food?", listOf("Root", "Stem", "Leaf", "Flower"), 2),
-        Quiz(
-            "What gas do humans exhale?",
-            listOf("Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"),
-            2
-        ),
-        Quiz(
-            "Which organ pumps blood in the human body?",
-            listOf("Lungs", "Heart", "Brain", "Kidneys"),
-            1
-        ),
-        Quiz("Which planet is closest to the Sun?", listOf("Venus", "Mercury", "Earth", "Mars"), 1),
-        Quiz(
-            "Which is the largest planet in our solar system?",
-            listOf("Earth", "Saturn", "Jupiter", "Neptune"),
-            2
-        ),
-        Quiz(
-            "What is the boiling point of water (at sea level)?",
-            listOf("90°C", "100°C", "110°C", "120°C"),
-            1
-        ),
+        // Physics (1-25)
+        Quiz("What force pulls objects toward Earth?", listOf("Magnetism", "Friction", "Gravity", "Inertia"), 2),
+        Quiz("What is the speed of light?", listOf("3000 km/s", "300,000 km/s", "150,000 km/s", "30,000 km/s"), 1),
+        Quiz("What is measured by a thermometer?", listOf("Temperature", "Pressure", "Humidity", "Speed"), 0),
+        Quiz("What is measured by a barometer?", listOf("Temperature", "Pressure", "Humidity", "Speed"), 1),
+        Quiz("What color of light has the longest wavelength?", listOf("Red", "Green", "Blue", "Violet"), 0),
+        Quiz("What type of energy is stored in food?", listOf("Mechanical", "Chemical", "Electrical", "Thermal"), 1),
+        Quiz("What type of energy comes from the Sun?", listOf("Solar", "Wind", "Thermal", "Hydro"), 0),
+        Quiz("What is the boiling point of water at sea level?", listOf("90°C", "100°C", "110°C", "120°C"), 1),
         Quiz("What is the freezing point of water?", listOf("0°C", "10°C", "32°C", "100°C"), 0),
-        Quiz(
-            "Which gas is essential for breathing?",
-            listOf("Hydrogen", "Oxygen", "Nitrogen", "Carbon dioxide"),
-            1
-        ),
-        Quiz(
-            "What part of the human body controls everything?",
-            listOf("Heart", "Lungs", "Brain", "Liver"),
-            2
-        ),
-        Quiz(
-            "What force pulls objects toward Earth?",
-            listOf("Magnetism", "Friction", "Gravity", "Inertia"),
-            2
-        ),
-        Quiz(
-            "Which planet is famous for its rings?",
-            listOf("Jupiter", "Mars", "Saturn", "Neptune"),
-            2
-        ),
-        Quiz(
-            "What is HCl?",
-            listOf("Hydrochloric acid", "Sulfuric acid", "Nitric acid", "Acetic acid"),
-            0
-        ),
+        Quiz("What is sound's speed in air approximately?", listOf("340 m/s", "3000 m/s", "34 m/s", "3400 m/s"), 0),
+        Quiz("What unit measures force?", listOf("Joule", "Newton", "Watt", "Pascal"), 1),
+        Quiz("What unit measures energy?", listOf("Joule", "Newton", "Watt", "Pascal"), 0),
+        Quiz("What unit measures power?", listOf("Joule", "Newton", "Watt", "Pascal"), 2),
+        Quiz("What is the SI unit of electric current?", listOf("Volt", "Ampere", "Ohm", "Coulomb"), 1),
+        Quiz("Who discovered gravity?", listOf("Einstein", "Newton", "Galileo", "Tesla"), 1),
+        Quiz("What type of mirror is used in car headlights?", listOf("Plane", "Concave", "Convex", "Cylindrical"), 1),
+        Quiz("What is the unit of frequency?", listOf("Hertz", "Decibel", "Watt", "Newton"), 0),
+        Quiz("What is the phenomenon of light bending?", listOf("Reflection", "Refraction", "Diffraction", "Dispersion"), 1),
+        Quiz("Which color has the shortest wavelength?", listOf("Red", "Green", "Blue", "Violet"), 3),
+        Quiz("What is the speed of sound in water?", listOf("Slower than air", "Same as air", "Faster than air", "No sound in water"), 2),
+        Quiz("What is an insulator?", listOf("Conducts electricity", "Blocks electricity", "Produces electricity", "Stores electricity"), 1),
+        Quiz("What happens to ice when heated?", listOf("Melts", "Evaporates", "Freezes", "Condenses"), 0),
+        Quiz("Which law states action equals reaction?", listOf("First law", "Second law", "Third law", "Gravity law"), 2),
+        Quiz("What is the center of gravity of a sphere?", listOf("Surface", "Center", "Top", "Bottom"), 1),
+        Quiz("What device converts electrical to mechanical energy?", listOf("Generator", "Motor", "Battery", "Transformer"), 1),
+
+        // Chemistry (26-50)
+        Quiz("What is the chemical symbol for water?", listOf("HO", "H2O", "O2H", "H2"), 1),
         Quiz("What is the chemical symbol for oxygen?", listOf("O", "Ox", "O2", "O3"), 0),
-        Quiz(
-            "What part of the cell contains genetic material?",
-            listOf("Cytoplasm", "Nucleus", "Cell wall", "Mitochondria"),
-            1
-        ),
-        Quiz(
-            "What is the hardest natural substance on Earth?",
-            listOf("Iron", "Gold", "Diamond", "Platinum"),
-            2
-        ),
-        Quiz(
-            "Which vitamin is produced by sunlight?",
-            listOf("Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"),
-            3
-        ),
-        Quiz(
-            "What planet is known as the Blue Planet?",
-            listOf("Earth", "Neptune", "Mars", "Venus"),
-            0
-        ),
-        Quiz(
-            "Which organ helps in digestion by producing bile?",
-            listOf("Liver", "Stomach", "Kidney", "Pancreas"),
-            0
-        ),
-        Quiz(
-            "What gas is used by plants during photosynthesis?",
-            listOf("Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"),
-            1
-        ),
-        Quiz(
-            "What is the main source of energy for Earth?",
-            listOf("Wind", "Water", "Sun", "Fire"),
-            2
-        ),
-        Quiz(
-            "What is the nearest star to Earth?",
-            listOf("Sirius", "Polaris", "The Sun", "Alpha Centauri"),
-            2
-        ),
-        Quiz(
-            "What instrument measures temperature?",
-            listOf("Thermometer", "Barometer", "Hygrometer", "Speedometer"),
-            0
-        ),
-        Quiz(
-            "What type of energy is stored in food?",
-            listOf("Mechanical", "Chemical", "Electrical", "Thermal"),
-            1
-        ),
-        Quiz(
-            "What part of the body helps you breathe?",
-            listOf("Heart", "Lungs", "Kidneys", "Liver"),
-            1
-        ),
-        Quiz(
-            "What is the largest organ in the human body?",
-            listOf("Heart", "Skin", "Liver", "Brain"),
-            1
-        ),
+        Quiz("What is HCl?", listOf("Hydrochloric acid", "Sulfuric acid", "Nitric acid", "Acetic acid"), 0),
+        Quiz("What is the hardest natural substance on Earth?", listOf("Iron", "Gold", "Diamond", "Platinum"), 2),
+        Quiz("What element do all organic compounds contain?", listOf("Oxygen", "Carbon", "Hydrogen", "Nitrogen"), 1),
+        Quiz("What is the chemical symbol for gold?", listOf("Go", "Gd", "Au", "Ag"), 2),
+        Quiz("What is the chemical symbol for silver?", listOf("Si", "Sv", "Ag", "Sr"), 2),
+        Quiz("What is the pH of pure water?", listOf("5", "7", "9", "14"), 1),
+        Quiz("Which metal is liquid at room temperature?", listOf("Mercury", "Iron", "Silver", "Gold"), 0),
+        Quiz("What gas makes up most of the Sun?", listOf("Oxygen", "Helium", "Hydrogen", "Carbon"), 2),
+        Quiz("What is the chemical formula for salt?", listOf("NaCl", "KCl", "CaCl", "MgCl"), 0),
+        Quiz("What is the lightest element?", listOf("Helium", "Hydrogen", "Oxygen", "Nitrogen"), 1),
+        Quiz("What is the most abundant element in the universe?", listOf("Oxygen", "Carbon", "Hydrogen", "Helium"), 2),
+        Quiz("What is dry ice?", listOf("Frozen water", "Solid CO2", "Frozen nitrogen", "Solid oxygen"), 1),
+        Quiz("What is the atomic number of carbon?", listOf("4", "6", "8", "12"), 1),
+        Quiz("Which acid is in lemon?", listOf("Acetic acid", "Citric acid", "Sulfuric acid", "Nitric acid"), 1),
+        Quiz("What turns blue litmus paper red?", listOf("Base", "Acid", "Salt", "Water"), 1),
+        Quiz("What is the chemical symbol for iron?", listOf("Ir", "Fe", "In", "Fr"), 1),
+        Quiz("What is the main component of air?", listOf("Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"), 2),
+        Quiz("What gas do plants release during photosynthesis?", listOf("CO2", "Oxygen", "Nitrogen", "Hydrogen"), 1),
+        Quiz("What is the formula for glucose?", listOf("C6H12O6", "C12H22O11", "C6H6", "CH4"), 0),
+        Quiz("Which gas causes global warming?", listOf("Oxygen", "CO2", "Nitrogen", "Helium"), 1),
+        Quiz("What is the chemical name for rust?", listOf("Iron oxide", "Iron sulfate", "Iron chloride", "Iron nitrate"), 0),
+        Quiz("What is the valency of oxygen?", listOf("1", "2", "3", "4"), 1),
+        Quiz("Which element is essential for thyroid function?", listOf("Iron", "Iodine", "Calcium", "Zinc"), 1),
+
+        // Biology (51-80)
+        Quiz("What is the center of an atom called?", listOf("Electron", "Nucleus", "Proton", "Neutron"), 1),
+        Quiz("What part of the plant makes food?", listOf("Root", "Stem", "Leaf", "Flower"), 2),
+        Quiz("Which organ pumps blood in the human body?", listOf("Lungs", "Heart", "Brain", "Kidneys"), 1),
+        Quiz("What part of the human body controls everything?", listOf("Heart", "Lungs", "Brain", "Liver"), 2),
+        Quiz("What part of the cell contains genetic material?", listOf("Cytoplasm", "Nucleus", "Cell wall", "Mitochondria"), 1),
+        Quiz("Which vitamin is produced by sunlight?", listOf("Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"), 3),
+        Quiz("Which organ helps in digestion by producing bile?", listOf("Liver", "Stomach", "Kidney", "Pancreas"), 0),
+        Quiz("What part of the body helps you breathe?", listOf("Heart", "Lungs", "Kidneys", "Liver"), 1),
+        Quiz("What is the largest organ in the human body?", listOf("Heart", "Skin", "Liver", "Brain"), 1),
         Quiz("What organ filters blood in humans?", listOf("Heart", "Liver", "Kidney", "Lung"), 2),
-        Quiz(
-            "What is the process of water changing to vapor called?",
-            listOf("Condensation", "Evaporation", "Freezing", "Melting"),
-            1
-        ),
-        Quiz(
-            "What type of blood do humans have?",
-            listOf("Red and Blue", "White", "Red", "Colorless"),
-            2
-        ),
-        Quiz(
-            "What is the speed of light?",
-            listOf("3000 km/s", "300,000 km/s", "150,000 km/s", "30,000 km/s"),
-            1
-        ),
-        Quiz(
-            "Which metal is liquid at room temperature?",
-            listOf("Mercury", "Iron", "Silver", "Gold"),
-            0
-        ),
-        Quiz(
-            "What is the study of living things called?",
-            listOf("Physics", "Chemistry", "Biology", "Geology"),
-            2
-        ),
-        Quiz(
-            "Which planet is farthest from the Sun?",
-            listOf("Neptune", "Pluto", "Saturn", "Jupiter"),
-            0
-        ),
-        Quiz(
-            "What color of light has the longest wavelength?",
-            listOf("Red", "Green", "Blue", "Violet"),
-            0
-        ),
-        Quiz(
-            "What element do all organic compounds contain?",
-            listOf("Oxygen", "Carbon", "Hydrogen", "Nitrogen"),
-            1
-        ),
-        Quiz(
-            "Which part of the eye controls light entry?",
-            listOf("Pupil", "Lens", "Retina", "Cornea"),
-            0
-        ),
-        Quiz(
-            "What is the process of green plants making food?",
-            listOf("Digestion", "Respiration", "Photosynthesis", "Transpiration"),
-            2
-        ),
-        Quiz(
-            "What is the main gas in Earth’s atmosphere?",
-            listOf("Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"),
-            2
-        ),
-        Quiz(
-            "Which planet is known for having the Great Red Spot?",
-            listOf("Mars", "Jupiter", "Saturn", "Venus"),
-            1
-        ),
-        Quiz(
-            "What is measured by a barometer?",
-            listOf("Temperature", "Pressure", "Humidity", "Speed"),
-            1
-        ),
-        Quiz(
-            "What type of energy comes from the Sun?",
-            listOf("Solar", "Wind", "Thermal", "Hydro"),
-            0
-        ),
-        Quiz(
-            "What are animals that eat both plants and meat called?",
-            listOf("Herbivores", "Carnivores", "Omnivores", "Insectivores"),
-            2
-        ),
-        Quiz(
-            "Which organ controls balance in the human body?",
-            listOf("Heart", "Brain", "Inner ear", "Liver"),
-            2
-        ),
-        Quiz(
-            "What is the main function of red blood cells?",
-            listOf("Fight disease", "Carry oxygen", "Produce energy", "Digest food"),
-            1
-        ),
+        Quiz("What type of blood do humans have?", listOf("Red and Blue", "White", "Red", "Colorless"), 2),
+        Quiz("What is the study of living things called?", listOf("Physics", "Chemistry", "Biology", "Geology"), 2),
+        Quiz("Which part of the eye controls light entry?", listOf("Pupil", "Lens", "Retina", "Cornea"), 0),
+        Quiz("What is the process of green plants making food?", listOf("Digestion", "Respiration", "Photosynthesis", "Transpiration"), 2),
+        Quiz("What are animals that eat both plants and meat?", listOf("Herbivores", "Carnivores", "Omnivores", "Insectivores"), 2),
+        Quiz("Which organ controls balance in the human body?", listOf("Heart", "Brain", "Inner ear", "Liver"), 2),
+        Quiz("What is the main function of red blood cells?", listOf("Fight disease", "Carry oxygen", "Produce energy", "Digest food"), 1),
         Quiz("Which part of the plant absorbs water?", listOf("Stem", "Root", "Leaf", "Flower"), 1),
-        Quiz(
-            "What gas makes up most of the Sun?",
-            listOf("Oxygen", "Helium", "Hydrogen", "Carbon"),
-            2
-        ),
-        Quiz("What is the smallest unit of life?", listOf("Organ", "Cell", "Molecule", "Tissue"), 1)
+        Quiz("What is the smallest unit of life?", listOf("Organ", "Cell", "Molecule", "Tissue"), 1),
+        Quiz("What gas do plants absorb from the atmosphere?", listOf("Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"), 1),
+        Quiz("What gas do humans exhale?", listOf("Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"), 2),
+        Quiz("Which gas is essential for breathing?", listOf("Hydrogen", "Oxygen", "Nitrogen", "Carbon dioxide"), 1),
+        Quiz("What is the process of water changing to vapor?", listOf("Condensation", "Evaporation", "Freezing", "Melting"), 1),
+        Quiz("How many bones are in the human body?", listOf("106", "206", "306", "406"), 1),
+        Quiz("What is the largest bone in the human body?", listOf("Femur", "Tibia", "Humerus", "Radius"), 0),
+        Quiz("What is the powerhouse of the cell?", listOf("Nucleus", "Mitochondria", "Ribosome", "Chloroplast"), 1),
+        Quiz("What blood type is the universal donor?", listOf("A", "B", "AB", "O"), 3),
+        Quiz("What blood type is the universal receiver?", listOf("A", "B", "AB", "O"), 2),
+        Quiz("How many chambers does the human heart have?", listOf("2", "3", "4", "5"), 2),
+        Quiz("What is the normal human body temperature?", listOf("35°C", "37°C", "39°C", "40°C"), 1),
+
+        // Space & Astronomy (81-95)
+        Quiz("What planet is known as the Red Planet?", listOf("Earth", "Mars", "Venus", "Jupiter"), 1),
+        Quiz("Which planet is closest to the Sun?", listOf("Venus", "Mercury", "Earth", "Mars"), 1),
+        Quiz("Which is the largest planet in our solar system?", listOf("Earth", "Saturn", "Jupiter", "Neptune"), 2),
+        Quiz("Which planet is famous for its rings?", listOf("Jupiter", "Mars", "Saturn", "Neptune"), 2),
+        Quiz("What planet is known as the Blue Planet?", listOf("Earth", "Neptune", "Mars", "Venus"), 0),
+        Quiz("What is the main source of energy for Earth?", listOf("Wind", "Water", "Sun", "Fire"), 2),
+        Quiz("What is the nearest star to Earth?", listOf("Sirius", "Polaris", "The Sun", "Alpha Centauri"), 2),
+        Quiz("Which planet is farthest from the Sun?", listOf("Neptune", "Pluto", "Saturn", "Jupiter"), 0),
+        Quiz("Which planet is known for the Great Red Spot?", listOf("Mars", "Jupiter", "Saturn", "Venus"), 1),
+        Quiz("How many planets are in our solar system?", listOf("7", "8", "9", "10"), 1),
+        Quiz("What is the hottest planet?", listOf("Mercury", "Venus", "Mars", "Jupiter"), 1),
+        Quiz("Which planet rotates on its side?", listOf("Saturn", "Uranus", "Neptune", "Jupiter"), 1),
+        Quiz("What is a group of stars called?", listOf("Cluster", "Constellation", "Galaxy", "Nebula"), 1),
+        Quiz("What galaxy do we live in?", listOf("Andromeda", "Milky Way", "Whirlpool", "Sombrero"), 1),
+        Quiz("What is the Earth's natural satellite?", listOf("Mars", "Moon", "Sun", "Venus"), 1),
+
+        // General Science (96-110)
+        Quiz("What is DNA?", listOf("Protein", "Genetic material", "Carbohydrate", "Lipid"), 1),
+        Quiz("What is the study of weather called?", listOf("Geology", "Meteorology", "Astronomy", "Oceanography"), 1),
+        Quiz("What is the study of earthquakes called?", listOf("Seismology", "Volcanology", "Meteorology", "Geology"), 0),
+        Quiz("What percentage of Earth is covered by water?", listOf("50%", "60%", "71%", "80%"), 2),
+        Quiz("What is the most abundant gas in Earth's atmosphere?", listOf("Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"), 2),
+        Quiz("What instrument measures earthquakes?", listOf("Barometer", "Seismograph", "Thermometer", "Hygrometer"), 1),
+        Quiz("What is the process of converting solid to gas?", listOf("Melting", "Sublimation", "Evaporation", "Condensation"), 1),
+        Quiz("What is the study of fossils called?", listOf("Archaeology", "Paleontology", "Anthropology", "Geology"), 1),
+        Quiz("Who invented the telephone?", listOf("Edison", "Bell", "Tesla", "Marconi"), 1),
+        Quiz("Who invented the light bulb?", listOf("Edison", "Bell", "Tesla", "Franklin"), 0),
+        Quiz("What is the greenhouse effect?", listOf("Cooling Earth", "Warming Earth", "Plant growth", "Ozone depletion"), 1),
+        Quiz("What layer protects Earth from UV rays?", listOf("Troposphere", "Ozone layer", "Stratosphere", "Mesosphere"), 1),
+        Quiz("What is the smallest particle of an element?", listOf("Molecule", "Atom", "Electron", "Proton"), 1),
+        Quiz("What carries genetic information?", listOf("Protein", "DNA", "Carbohydrate", "Lipid"), 1),
+        Quiz("What is the process of cell division called?", listOf("Mitosis", "Meiosis", "Osmosis", "Diffusion"), 0)
     )
 }
