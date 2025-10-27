@@ -65,13 +65,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:text="10 point"
-        android:textSize="28dp"
+        android:textSize="24dp"
         android:layout_marginLeft="16dp"
         android:textColor="#454545"
         android:layout_marginRight="16dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/design_2"
-        android:padding="8dp"
+        android:padding="16dp"
         />
 
     <LinearLayout
