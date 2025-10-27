@@ -23,6 +23,7 @@ import kotlin.jvm.java
 
 class Dashboard_Activity : AppCompatActivity() {
     lateinit var binding: ActivityDashboardBinding
+    var highScores =0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -70,6 +71,23 @@ class Dashboard_Activity : AppCompatActivity() {
             return dataList.size
         }
 
+    }
+
+    override fun onResume() {
+        super.onResume()
+
+        val sharedPref = getSharedPreferences("QuizAppPrefs", Context.MODE_PRIVATE)
+        val savedHighScore = sharedPref.getInt("highScore", 0)
+
+        val lastScore = intent.getIntExtra("scoress", 0)
+        binding.lastScore.text = lastScore.toString()
+
+        if (lastScore > savedHighScore) {
+            sharedPref.edit().putInt("highScore", lastScore).apply()
+            binding.highScore.text = lastScore.toString()
+        } else {
+            binding.highScore.text = savedHighScore.toString()
+        }
     }
 
 }

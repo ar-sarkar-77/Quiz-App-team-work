@@ -22,7 +22,10 @@ class ResultActivity : AppCompatActivity() {
 
         binding.startButton.setOnClickListener {
 
-            startActivity(Intent(this , Dashboard_Activity::class.java))
+            var intent = Intent(this , Dashboard_Activity::class.java)
+            intent.putExtra("scoress" , score)
+            startActivity(intent)
+
             finish()
 
         }
