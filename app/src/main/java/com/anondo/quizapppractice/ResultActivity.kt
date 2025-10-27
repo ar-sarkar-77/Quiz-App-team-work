@@ -16,6 +16,16 @@ class ResultActivity : AppCompatActivity() {
         enableEdgeToEdge()
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        var score = intent.getIntExtra("score" , 0)
+
+        binding.mainTitle.text = "Your score : "+score
+
+        binding.startButton.setOnClickListener {
+
+            startActivity(Intent(this , Dashboard_Activity::class.java))
+            finish()
+
+        }
 
     }
 }
