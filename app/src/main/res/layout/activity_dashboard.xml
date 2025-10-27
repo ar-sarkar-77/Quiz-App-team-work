@@ -65,13 +65,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:text="10 point"
-        android:textSize="28dp"
+        android:textSize="24dp"
         android:layout_marginLeft="16dp"
         android:textColor="#454545"
         android:layout_marginRight="16dp"
         android:layout_marginTop="28dp"
         android:background="@drawable/design_2"
-        android:padding="8dp"
+        android:padding="16dp"
         />
 
     <LinearLayout
@@ -173,7 +173,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="15"
-                        android:textColor="#09FF00"
+                        android:textColor="#004CFF"
                         android:textSize="16dp"
                         android:textStyle="bold"
                         android:layout_marginTop="2dp"/>
